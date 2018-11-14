@@ -14,7 +14,7 @@ DROP TABLE IF EXISTS dbo.Department;
 DROP TABLE IF EXISTS dbo.StrategicOutcome;
 DROP TABLE IF EXISTS dbo.StrategicAnchor;
 DROP TABLE IF EXISTS dbo.Category;
-DROP TABLE IF EXISTS dbo.Reason;
+DROP TABLE IF EXISTS dbo.Reason;	
 DROP TABLE IF EXISTS dbo.CurrentStatus;
 DROP TABLE IF EXISTS dbo.CustomerCategory;
 DROP TABLE IF EXISTS dbo.DeliveryTeam;
@@ -89,7 +89,7 @@ CREATE TABLE dbo.Project (
 	DeliveryTeamID int NOT NULL
 		REFERENCES dbo.DeliveryTeam(DeliveryTeamID),
 	WorkloadID int NULL
-		REFERENCES dbo.Workload(WorkloadID)
+		REFERENCES dbo.Workload(WorkloadID),
 );
 
 CREATE TABLE dbo.Department_Project (
